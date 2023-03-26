@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --cor-de-fundo: #00030c;
+    --cor-primaria-fonte: #fff;
+    --cor-secundaria-fonte: #c0c0c0;
+    --cor-componentes: #167bf7;
+    --fonte-padrao: "inter";
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-primaria-fonte);
+    font-family: var(--fonte-padrao);
+    font-weight: 400;
+}
+
+/* header */
+.cabecalho {
+    background-image: url(./img/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 5.4rem;
+}
+
+.cabecalho h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2.2rem;
+}
+
+.cabecalho div {
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    width: 90%;
+    margin-top: 5.4rem;
+}
+
+.cabecalho section a {
+    color: var(--cor-primaria-fonte);
+    padding: 1.6rem;
+    font-size: 1.6rem;
+    text-align: center;
+    border-radius: 0.8rem;
+}
+
+.cabecalho section .botao__pintado {
+    background-color: var(--cor-componentes);
+}
+
+.cabecalho section .botao__transparente {
+    border: 0.1rem solid var(--cor-primaria-fonte);
+}
+
+.cabecalho p {
+    font-size: 1.2rem;
+    color: var(--cor-secundaria-fonte);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* main */
+.principal h3 {
+    font-size: 4.8rem;
+}
+
+.principal p {
+    font-size: 1.6rem;
+    color: var(--cor-secundaria-fonte);
+}
+
+.principal div {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 1.6rem;
+}
+
+.principal__conteudo__serviços {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.principal a {
+    background-color: var(--cor-componentes);
+    border-radius: 8px;
+    padding: 1.6rem;
+    width: 25%;
+    text-align: center;
+    color: var(--cor-primaria-fonte);
+    font-size: 1.6rem;
+}
+
+.principal__conteudo__dispositivos {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.principal__conteudo__dispositivos ul {
+    display: flex;
+}
+
+.principal__conteudo__dispositivos li p {
+    text-align: center;
+    font-size: 3.2rem;
+    color: var(--cor-primaria-fonte);
+    font-weight: 700;
+}
+
+/* footer */
+.rodape {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 4rem;
+}
+
+.rodape ul {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.rodape div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+    width: 80%;
+}
+
+.rodape a {
+    color: var(--cor-primaria-fonte);
+    font-size: 1.4rem;
+}
+
+.rodape a:hover {
+    color: var(--cor-componentes);
+}
+
+.rodape p {
+    font-size: 1.1rem;
+}

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --cor-de-fundo: #010101;
+    --cor-letra-primaria: #22d4fd;
+    --cor-letra-secundaria: #f6f6f6;
+    --cor-letra-footer: #000;
+    --fonte-krona: 'Krona One', sans-serif;
+    --fonte-montserrat: 'Montserrat', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-letra-secundaria);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* header  */
+.cabecalho nav {
+    display: flex;
+    gap: 8rem;
+    font-size: 2.4rem;
+    margin-left: 13.3%;
+    margin-top: 6.7rem;
+}
+
+.cabecalho a {
+    color: var(--cor-letra-primaria);
+    font-family: var(--fonte-montserrat);
+    font-weight: 600;
+}
+
+/* main  */
+.principal {
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    padding: 10rem 0;
+}
+
+.principal section {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    gap: 4rem;
+}
+
+.principal h1 {
+    font-size: 3.6rem;
+    font-family: var(--fonte-krona);
+}
+
+.principal ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.principal ul li {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+}
+
+.principal img {
+    width: 25%;
+    margin-top: 9rem;
+}
+
+/* rodape  */
+.rodape {
+    background-color: var(--cor-letra-primaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape strong {
+    font-family: var(--fonte-montserrat);
+    font-size: 2.4rem;
+    color: var(--cor-letra-footer);
+    padding: 2.8rem 0;
+}
+
+@media (max-width: 450px) {
+    .cabecalho nav {
+        margin-left: 0;
+        justify-content: center;
+    }
+    .principal {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0 0 5rem 0;
+    }
+    
+    .principal section {
+        width: 100%;
+        align-items: center;
+    }
+    .principal ul {
+        width: 80%;
+    }
+    .principal img {
+        width: 60%;
+        margin-bottom: 10%;
+    }
+}
